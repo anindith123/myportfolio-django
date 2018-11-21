@@ -6,10 +6,9 @@ class Project(models.Model):
 
     title       = models.CharField(max_length = 150)
     description = models.TextField()
-    short_desc = models.TextField(max_length = 30,default = '#')
+    short_desc = models.TextField(max_length = 45,default = '#')
     tools       = models.TextField()
     git_link    = models.URLField(max_length = 250)
-
 
     
 
